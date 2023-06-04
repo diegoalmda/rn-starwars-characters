@@ -1,0 +1,36 @@
+{
+  "name": "starwars-characters",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "test": "jest --watchAll"
+  },
+  "dependencies": {
+    "expo": "~48.0.18",
+    "expo-splash-screen": "~0.18.2",
+    "expo-status-bar": "~1.4.4",
+    "jest": "^29.2.1",
+    "jest-expo": "^48.0.2",
+    "react": "18.2.0",
+    "react-native": "0.71.8",
+    "react-native-svg": "13.4.0",
+    "react-test-renderer": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@testing-library/dom": "^9.3.0",
+    "@testing-library/jest-native": "^5.4.2",
+    "@testing-library/react-native": "^12.1.2",
+    "@types/jest": "^29.5.2",
+    "@types/react": "~18.0.27",
+    "@types/react-native": "^0.72.2",
+    "jest-svg-transformer": "^1.0.0",
+    "react-native-svg-transformer": "^1.0.0",
+    "typescript": "^4.9.4"
+  },
+  "private": true
+}
