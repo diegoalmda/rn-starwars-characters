@@ -1,13 +1,23 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react-native';
-
+import { render, fireEvent, cleanup } from '@testing-library/react-native';
 import { Home } from '../../screens/Home';
-import Logo from '../../assets/starwars.svg';
 
-const mocked = jest.mock('../../assets/starwars.svg', () => "mockedSVG");
+const mockedNavigate = jest.fn();
+
+jest.mock('@react-navigation/native', () => (
+  { useNavigation: () => ({ navigate: mockedNavigate }) }));
+
+afterEach(cleanup);
 
 describe('Home screen', () => {
-  it('Should be rendered successfully', () => {
-    render(<Home />);
+  it('Should render image successfully', () => {
+    const { getByTestId } = render(<Home />);
+    const image = getByTestId('logoImage');
+    expect(image).toBeTruthy();
+  });
+  it('Should calls navigation on button press', () => {
+    const { getByTestId } = render(<Home />);
+    fireEvent.press(getByTestId('goToCharacters'));
+    expect(mockedNavigate).toHaveBeenCalledTimes(1);
   });
 });

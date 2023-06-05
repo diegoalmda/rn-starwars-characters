@@ -14,9 +14,10 @@ export const Home:FC = () => {
   return (
     <Layout>
       <View style={styles.container}>
-        <Image source={require('../../assets/starwars.png')} style={styles.logoImage} />
+        <Image testID="logoImage" source={require('../../assets/starwars.png')} style={styles.logoImage} />
         
-        <TouchableOpacity
+        <TouchableOpacity          
+          testID="goToCharacters"
           activeOpacity={0.7}
           style={styles.listButton}
           onPress={handleListCharacters}
