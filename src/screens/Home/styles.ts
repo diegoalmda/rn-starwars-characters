@@ -1,4 +1,5 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
+import { colors } from '../../globalStyles';
 
 export const styles = StyleSheet.create({
   container: {
@@ -14,7 +15,7 @@ export const styles = StyleSheet.create({
     marginTop: 40,
     textTransform: 'uppercase',
     borderRadius: 10,
-    backgroundColor: '#315E9F',
+    backgroundColor: colors.blue,
     borderWidth: 2,
     borderColor: '#fff',
     padding: 10
