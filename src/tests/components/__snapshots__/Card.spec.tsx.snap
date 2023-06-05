@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout Component renders Child component 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "rgba(120, 111, 165, 0.1)",
+      "borderColor": "#C3C4C7",
+      "borderRadius": 10,
+      "borderWidth": 1,
+      "flex": 1,
+      "marginBottom": 10,
+      "padding": 10,
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#C3C4C7",
+        "fontSize": 25,
+        "marginBottom": 10,
+      }
+    }
+  >
+    John
+  </Text>
+  <View>
+    <Text
+      style={
+        {
+          "color": "#C3C4C7",
+        }
+      }
+    >
+      Height: 
+      180
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#C3C4C7",
+        }
+      }
+    >
+      Mass: 
+      100
+    </Text>
+  </View>
+</View>
+`;
