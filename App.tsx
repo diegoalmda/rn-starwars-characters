@@ -1,17 +1,19 @@
-import 'react-native-gesture-handler';
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { ImageBackground, StyleSheet, Text } from 'react-native';
-
-import backgroundImage from './src/assets/background.png';
+import 'react-native-gesture-handler';
+import { QueryClient, QueryClientProvider } from 'react-query'
 import Routes from './src/routes';
-import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
+import { StatusBar } from 'expo-status-bar';
 
 const queryClient = new QueryClient()
 
 export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
+      <StatusBar
+        style='light'
+        backgroundColor='transparent'
+        translucent
+      />
       <Routes />
     </QueryClientProvider>
   );

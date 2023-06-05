@@ -1,5 +1,4 @@
 import { FC, ReactNode } from 'react';
-import { StatusBar } from 'expo-status-bar';
 import { ImageBackground, Platform, SafeAreaView, StyleSheet } from 'react-native';
 
 import backgroundImage from '../../assets/background.png';
@@ -8,7 +7,7 @@ interface LayoutProps {
   children: ReactNode
 }
 
-export const Layout:FC = ({ children }: LayoutProps) => {
+export const Layout:FC<LayoutProps> = ({ children }) => {
   return (
     <ImageBackground 
       style={styles.container}
@@ -16,11 +15,6 @@ export const Layout:FC = ({ children }: LayoutProps) => {
       defaultSource={backgroundImage}
       imageStyle={styles.cover}
     >
-      <StatusBar
-        style='light'
-        backgroundColor='transparent'
-        translucent
-      />
       <SafeAreaView style={styles.AndroidSafeArea}>
         { children }
       </SafeAreaView>
