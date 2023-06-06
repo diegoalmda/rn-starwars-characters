@@ -29,3 +29,9 @@ Instale as dependências do projeto e depois rode o servidor:
 npm install
 npx expo start
 ```
+Para rodar os testes:
+
+```bash
+# executando os testes usando npm
+npm run test
+```
