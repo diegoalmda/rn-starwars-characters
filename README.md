@@ -9,8 +9,6 @@ App criado com React native para listagem de personagens dos filmes de Star Wars
 
 ## 🚀 Tecnologias
 
-O projeto foi criado com o framework [Next.js](https://nextjs.org/) inicializado com [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 - React Native
 - Typescript
 - Expo
