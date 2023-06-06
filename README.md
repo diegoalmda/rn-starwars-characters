@@ -23,15 +23,15 @@ O projeto foi criado com o framework [Next.js](https://nextjs.org/) inicializado
 
 Instale as dependências do projeto e depois rode o servidor:
 
-```bash
 # executando o projeto usando npm
 # Obs: Após iniciar o expo basta selecionar o emulador de preferência ou usar o próprio smartphone.
+```bash
 npm install
 npx expo start
 ```
 Para rodar os testes:
 
-```bash
 # executando os testes usando npm
+```bash
 npm run test
 ```
