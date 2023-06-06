@@ -20,8 +20,7 @@ App criado com React native para listagem de personagens dos filmes de Star Wars
 ## 💻 Executando o projeto
 
 ### executando o projeto usando npm
-Instale as dependências do projeto e depois rode o servidor:
-Obs: Após iniciar o expo basta selecionar o emulador de preferência ou usar o próprio smartphone.
+Instale as dependências do projeto e depois rode o servidor. Após iniciar o expo basta selecionar o emulador de preferência ou usar o próprio smartphone.
 ```bash
 npm install
 npx expo start
